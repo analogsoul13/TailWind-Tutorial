@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercom's UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Youtube video "Building intercom's Inbox UI" -->
+    <!-- Timestamp - 1:01:36 / 1:51:49 -->
+</head>
+<body>
+
+    <div class="flex flex-row h-screen bg-gray-100">
+        <div class="flex flex-col justify-between items-center flex-none w-16 p-4 bg-gray-200">
+            <div class="flex flex-col space-y-4">
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+            </div>
+
+            <div class="flex flex-col space-y-4">
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+    
+                <a href=""><div class="rounded-full bg-gray-400 w-8 h-8"></div></a>
+            </div>
+
+
+        </div>
+
+
+        <div class="flex-none w-64 bg-gray-100 p-4 flex flex-col space-y-4">
+            <div class="flex flex-row justify-between items-center mb-6">
+                <h1 class=" font-semibold text-2xl">Inbox</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+            </div>
+
+            <div class="bg-red-200 h-64"></div>
+            <div class="bg-red-200 h-64"></div>
+        </div>
+
+
+        <div class="flex flex-row flex-auto bg-white rounded-tl-xl border-l shadow-xl">
+            <div class="flex flex-col w-1/5 ">
+                <div class="flex-none h-24 bg-red-200">top</div>
+
+                <div class="flex-auto overflow-y-auto">
+                    <!-- {{#each (range 1 100)}} -->
+                    <a href="" class="block border-b">
+                        <div class="border-l-2 border-blue-500 bg-blue-100 p-3 space-y-4">
+                            <div class="flex flex-row items-center space-x-2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                      <strong class="flex-grow text-sm">Nikola Tesla</strong>
+                                      <div class="text-sm text-gray-600">5hr</div>
+
+                            </div>
+
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                  </svg>
+
+                                  <div class="flex-grow truncate text-xs">some message content Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, corporis?</div>
+
+
+                            </div>                          
+                        </div>
+                    </a>
+                    <!-- {{/each}}    -->
+                </div>
+            </div>
+
+
+            <div class="w-3/5 border-l border-r border-gray-400 ">center</div>
+
+
+            <div class="w-1/5 bg-gray-200">right</div>
+        </div>
+    </div>
+    
+</body>
+</html>
